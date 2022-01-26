@@ -1,18 +1,18 @@
 import React from 'react';
-
-/* import { EachMonth } from '../EachMonth'; */
+import { Link } from 'wouter';
+import { useUpdateTask } from '../../hooks/useUpdateTask';
 
 function ListMonth () {
-    const allMonths = [ 'Januray', 'February', 'March', 'April', 'May', 'June', 'Jule', 'August', 'September', 'October', 'November', 'December' ]
+    const {allMonths, takingMonth} = useUpdateTask();
 
     return <>
             <h2>Activities by month</h2>
             <div className='Cards'>
                 {
-                    allMonths.map((item) => 
-                        <div className='Card'>
-                            {item}
-                        </div>
+                    allMonths.map((item, index) => 
+                        <Link to='/activities' className='Card' key={index} onClick={ () => takingMonth(item.code) }>
+                            {item.name}
+                        </Link>
                     )
                 }
             </div>

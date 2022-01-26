@@ -1,5 +1,4 @@
 import React from 'react';
-import './ActiviteCard.css';
 
 function ActiviteCard ({ id, name, date, distance, time, elevation }) {
     const formatDate = date.substring(0, 10);
