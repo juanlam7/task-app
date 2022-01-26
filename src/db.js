@@ -98,6 +98,50 @@ export const activities = [
             "distance": "1899",
             "time":"4000",
             "elevation_gain": "3"
+        },
+        {
+            "id": "9",
+            "name": "Montaña 9",
+            "athlete" : {
+                "id" : 111
+            },
+            "date": "2022-09-17T12:15:09Z",
+            "distance": "1850",
+            "time":"4300",
+            "elevation_gain": "2"
+        },
+        {
+            "id": "10",
+            "name": "Montaña 10",
+            "athlete" : {
+                "id" : 111
+            },
+            "date": "2022-08-17T12:15:09Z",
+            "distance": "1950",
+            "time":"4700",
+            "elevation_gain": "0"
+        },
+        {
+            "id": "11",
+            "name": "Montaña 11",
+            "athlete" : {
+                "id" : 111
+            },
+            "date": "2022-07-17T12:15:09Z",
+            "distance": "2950",
+            "time":"3700",
+            "elevation_gain": "1"
+        },
+        {
+            "id": "12",
+            "name": "Montaña 12",
+            "athlete" : {
+                "id" : 111
+            },
+            "date": "2022-03-17T12:15:09Z",
+            "distance": "4950",
+            "time":"5700",
+            "elevation_gain": "0"
         }
     ]
 
