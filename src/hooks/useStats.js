@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 
 function useStats (choice) {
     const allActivities = useSelector((store) => store.taskReducer.tasks);
-    const allMonths = useSelector((store) => store.taskReducer.months);
 
     const globalDate = new Date();
     const currentMonth = (globalDate.getMonth() + 1).toString().padStart(2, "0");
