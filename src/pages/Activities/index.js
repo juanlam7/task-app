@@ -1,16 +1,15 @@
 import React from 'react';
-import * as data from '../../db';
+import { useSelector } from 'react-redux';
 import { ActiviteCard } from '../../components/ActiviteCard';
-import './Activities.css';
 
 function Activities () {
-    const {activities} = data;
+    const allActivities = useSelector((store) => store.taskReducer.tasks);
 
     return <>
-        <h2>All activities</h2>
+        <h2>Activities</h2>
         <div className='Cards'>
             {
-                activities.map( ({ id, name, date, distance, time, elevation_gain }) => 
+                allActivities.map( ({ id, name, date, distance, time, elevation_gain }) => 
                     <ActiviteCard 
                         key={id}
                         name={name} 

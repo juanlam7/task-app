@@ -6,7 +6,7 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2021-11-02T12:15:09Z",
+            "date": "2021-11-13T12:15:09Z",
             "distance": "4435",
             "time":"6000",
             "elevation_gain": "3"
@@ -17,7 +17,7 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2021-12-02T12:15:09Z",
+            "date": "2021-12-22T12:15:09Z",
             "distance": "1435",
             "time":"2800",
             "elevation_gain": "0"
@@ -28,7 +28,7 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2021-11-02T12:15:09Z",
+            "date": "2021-11-11T12:15:09Z",
             "distance": "7675",
             "time":"5500",
             "elevation_gain": "1"
@@ -39,7 +39,7 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2021-12-02T12:15:09Z",
+            "date": "2021-12-27T12:15:09Z",
             "distance": "8764",
             "time":"7200",
             "elevation_gain": "3"
@@ -50,7 +50,7 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2022-01-03T12:15:09Z",
+            "date": "2022-10-03T12:15:09Z",
             "distance": "1754",
             "time":"3600",
             "elevation_gain": "2"
@@ -61,7 +61,7 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2021-12-02T12:15:09Z",
+            "date": "2021-12-14T12:15:09Z",
             "distance": "2546",
             "time":"5000",
             "elevation_gain": "2"
@@ -72,7 +72,7 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2021-11-02T12:15:09Z",
+            "date": "2021-11-09T12:15:09Z",
             "distance": "1886",
             "time":"3000",
             "elevation_gain": "0"
@@ -83,7 +83,7 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2022-01-05T12:15:09Z",
+            "date": "2022-10-05T12:15:09Z",
             "distance": "3754",
             "time":"3000",
             "elevation_gain": "1"
@@ -94,10 +94,60 @@ export const activities = [
             "athlete" : {
                 "id" : 111
             },
-            "date": "2022-01-10T12:15:09Z",
+            "date": "2022-10-10T12:15:09Z",
             "distance": "1899",
             "time":"4000",
             "elevation_gain": "3"
         }
     ]
-  
+
+export const allMonths = [ 
+        {
+            'name':'Januray',
+            'code':'01'
+        }, 
+        {
+            'name':'February',
+            'code':'02'
+        }, 
+        {
+            'name':'March',
+            'code':'03'
+        }, 
+        {
+            'name':'April',
+            'code':'04'
+        }, 
+        {
+            'name':'May',
+            'code':'05'
+        }, 
+        {
+            'name':'June',
+            'code':'06'
+        }, 
+        {
+            'name':'Jule',
+            'code':'07'
+        }, 
+        {
+            'name':'August',
+            'code':'08'
+        }, 
+        {
+            'name':'September',
+            'code':'09'
+        }, 
+        {
+            'name':'October',
+            'code':'10'
+        }, 
+        {
+            'name':'November',
+            'code':'11'
+        }, 
+        {
+            'name':'December',
+            'code':'12'
+        },
+]
