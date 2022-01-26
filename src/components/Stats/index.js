@@ -1,7 +1,8 @@
 import React from 'react';
-
+import { useStats } from '../../hooks/useStats';
 
 function Stats () {
+    const [distanceAverage, timeAverage, elevationAverage] = useStats()
 
     return <>
         <h2>Stats</h2>
@@ -9,15 +10,15 @@ function Stats () {
         <div className='Cards'>
             <div className='Card'>
                 <h3>Distance</h3>
-                <p>30000 m</p>
+                <p>{distanceAverage} m</p>
             </div>
             <div className='Card'>
                 <h3>Time</h3>
-                <p>5000000 seg</p>
+                <p>{timeAverage} seg</p>
             </div>
             <div className='Card'>
                 <h3>Elevation gain</h3>
-                <p>300 m</p>
+                <p>{elevationAverage} m</p>
             </div>
         </div>
     </>
