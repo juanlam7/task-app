@@ -1,12 +1,20 @@
 import React from 'react';
 import { useStats } from '../../hooks/useStats';
 
-function Stats () {
-    const [distanceAverage, timeAverage, elevationAverage] = useStats()
+function Stats (props) {
+    const [distanceAverage, timeAverage, elevationAverage] = useStats(props.choice)
 
     return <>
-        <h2>Stats</h2>
-        <p>Here is yours stats for the last 3 months</p>
+        { props.choice === 'monthly' && (<>
+                <h2>Stats</h2>
+                <p>Here is yours stats for the last 3 months</p>
+            </>
+        )}
+        { props.choice === 'global' && (<>
+                <p>Here is yours global stats</p>
+            </>
+        )}
+
         <div className='Cards'>
             <div className='Card'>
                 <h3>Distance</h3>

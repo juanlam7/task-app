@@ -4,13 +4,11 @@ import { Stats } from '../../components/Stats';
 import { ListMonth } from '../../components/ListMonths';
 
 function Monthly () {
-
-
     return <>
-            <Stats />
+            <Stats choice='monthly'/>
+            <Stats choice='global'/>
             <ListMonth />
         </>
-    
 }
 
 export { Monthly }

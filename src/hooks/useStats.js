@@ -1,9 +1,34 @@
 import { useSelector } from 'react-redux';
 
-function useStats () {
+function useStats (choice) {
     const allActivities = useSelector((store) => store.taskReducer.tasks);
+    const allMonths = useSelector((store) => store.taskReducer.months);
+
+    const globalDate = new Date();
+    const currentMonth = (globalDate.getMonth() + 1).toString().padStart(2, "0");
+    const objWithoutIncludeCurrentMonth = [
+      {
+        'month': currentMonth > 1 ? (currentMonth - 1) : (currentMonth - 1) + 12,
+      },
+      {
+        'month': currentMonth > 1 ? (currentMonth - 2) : (currentMonth - 2) + 12,
+      },
+      {
+        'month': currentMonth > 1 ? (currentMonth - 3) : (currentMonth - 3) + 12,
+      }
+    ]
     
-    const allSum = allActivities.reduce( (collector, nextValue) => {
+    const filteredActivities = allActivities.filter(el => {
+      let getMonth = el.date.substring(5, 7);
+        return objWithoutIncludeCurrentMonth.find(element => {
+           return parseInt(element.month) === parseInt(getMonth);
+        });
+    });
+
+    const finalActivities = choice === 'monthly' ? filteredActivities :
+                            choice === 'global' ? allActivities : [] ; 
+
+    const allSum = finalActivities.reduce( (collector, nextValue) => {
 
         return {
           distance: parseInt(collector.distance) + parseInt(nextValue.distance),
